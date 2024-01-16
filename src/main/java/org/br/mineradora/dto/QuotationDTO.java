@@ -18,4 +18,5 @@ public class QuotationDTO {
     private LocalDateTime date;
 
     private BigDecimal currencyPrice;
+
 }

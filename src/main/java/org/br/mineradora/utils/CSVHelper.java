@@ -1,5 +1,6 @@
 package org.br.mineradora.utils;
 
+import jakarta.enterprise.context.ApplicationScoped;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 import org.br.mineradora.dto.OpportunityDTO;
@@ -10,8 +11,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.List;
-
-public class CSVhelper {
+public class CSVHelper {
 
     public static ByteArrayInputStream OpportunitiesToCSV(List<OpportunityDTO> opportunities) throws IOException {
         final CSVFormat format = CSVFormat.DEFAULT.withHeader("ID Proposta", "Cliente", "Preço por Tonelada", "Melhor cotação de Moeda");
