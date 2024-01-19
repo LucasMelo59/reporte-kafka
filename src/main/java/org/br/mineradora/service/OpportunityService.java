@@ -18,5 +18,5 @@ public interface OpportunityService {
 
     List<OpportunityDTO> generateOpportunityData();
 
-    ByteArrayInputStream generateCSVOpportunityReport() throws IOException;
+//    ByteArrayInputStream generateCSVOpportunityReport() throws IOException;
 }

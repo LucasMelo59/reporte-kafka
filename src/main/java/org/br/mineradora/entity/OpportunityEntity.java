@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 public class OpportunityEntity {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
     private LocalDateTime date;
